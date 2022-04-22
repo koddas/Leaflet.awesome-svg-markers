@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Awesome Markers Example: Random Markers</title>
+  <title>Awesome SVG Markers Example: Random Markers</title>
   <meta charset="utf-8" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
-  <link rel="stylesheet" href="../dist/leaflet.awesome-markers.css">
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/leaflet.awesome-svg-markers.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet.css"" />
   <!--[if lte IE 8]>
       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
   <![endif]-->
 
-  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet-src.min.js"></script>
 
 </head>
 <body>
-  <div id="map" style="width: 800px; height: 600px"></div>
+  <div id="map" style="width: 100%; height: 800px"></div>
 
-  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/leaflet-src.min.js"></script>
   <script src="../dist/leaflet.awesome-markers.js"></script>
   <script>
     var map = L.map('map').setView([51.5, -0.09], 9);
 
-    L.tileLayer('http://{s}.tile.cloudmade.com/{key}/22677/256/{z}/{x}/{y}.png', {
-      attribution: 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade. Font Awesome by Dave Gandy',
-      key: 'BC9A493B41014CAABB98F0471D759707',
-      detectRetina: true
+    L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
+      attribution:
+        '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
 
     var colors = ['red', 'blue', 'green', 'purple', 'orange', 'darkred', 'lightred', 'beige', 'darkblue', 'darkgreen', 'cadetblue', 'darkpurple', 'white', 'pink', 'lightblue', 'lightgreen', 'gray', 'black', 'lightgray'];
@@ -43,7 +42,7 @@
       var awesomeIcon = awesomeIcons[Math.floor(Math.random()*awesomeIcons.length)];
       var geo = [rndCoordinates(51.3,51.8, 3), rndCoordinates(0.3,-0.4,3)];
 
-      L.marker(geo, {icon: L.AwesomeMarkers.icon({icon: awesomeIcon, prefix: 'fa', markerColor: color}) }).addTo(map);
+      L.marker(geo, {icon: L.AwesomeSVGMarkers.icon({icon: awesomeIcon, prefix: 'fa', markerColor: color}) }).addTo(map);
     }
   </script>
 </body>
