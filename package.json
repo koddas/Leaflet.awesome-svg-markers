@@ -1,8 +1,8 @@
 {
-  "name": "leaflet.awesome-markers",
-  "version": "2.0.5",
-  "description": "Leaflet Awesome Markers - allows you to display custom icons easily using Leaflet",
-  "main": "dist/leaflet.awesome-markers.js",
+  "name": "leaflet.awesome-svg-markers",
+  "version": "1.0.0",
+  "description": "Leaflet Awesome SVG Markers - allows you to display custom icons easily using Leaflet, now also using SVG icons",
+  "main": "dist/leaflet.awesome-svg-markers.js",
   "directories": {
     "example": "examples"
   },
@@ -11,17 +11,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sigma-geosistemas/Leaflet.awesome-markers.git"
+    "url": "git+https://github.com/koddas/Leaflet.awesome-svg-markers.git"
   },
   "keywords": [
     "leaflet",
     "map",
-    "icons"
+    "icons",
+    "svg"
   ],
-  "author": "Lennard Voogdt and Sigma Geosistemas",
+  "author": {
+    "name": "Johan Holmberg",
+    "email": "johan@idioti.se"
+  },
+  "contributors": ["Lennard Voogdt and Sigma Geosistemas"],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sigma-geosistemas/Leaflet.awesome-markers/issues"
+    "url": "https://github.com/koddas/Leaflet.awesome-svg-markers/issues"
   },
-  "homepage": "https://github.com/sigma-geosistemas/Leaflet.awesome-markers#readme"
+  "homepage": "https://github.com/koddas/Leaflet.awesome-svg-markers#readme"
 }
