@@ -1,6 +1,6 @@
 {
   "name": "leaflet.awesome-svg-markers",
-  "version": "1.0.0",
+  "version": "3.0.1",
   "description": "Leaflet Awesome SVG Markers - allows you to display custom icons easily using Leaflet, now also using SVG icons",
   "main": "dist/leaflet.awesome-svg-markers.js",
   "directories": {
